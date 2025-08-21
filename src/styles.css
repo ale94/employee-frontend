@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+.card-glass {
+  background: rgba(30, 30, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.table thead th {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+.action-icon {
+  cursor: pointer;
+}
+.action-icon:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
