@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
   <div class="container">
-    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" [routerLink]="'/dashboard'">
       <i class="bi bi-people-fill"></i> Employee Manager
     </a>
     <button
@@ -14,12 +14,12 @@
     <div id="navContent" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#"
+          <a class="nav-link active" [routerLink]="'/dashboard'"
             ><i class="bi bi-house-door-fill"></i> Inicio</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"
+          <a class="nav-link" [routerLink]="'/dashboard/new'"
             ><i class="bi bi-person-plus-fill"></i> Empleado</a
           >
         </li>

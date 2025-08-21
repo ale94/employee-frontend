@@ -16,4 +16,4 @@ import { FooterComponent } from '../../components/footer/footer.component';
   ],
   templateUrl: './employe-dashboard.component.html',
 })
-export class EmployeDashboardComponent {}
+export default class EmployeDashboardComponent {}
