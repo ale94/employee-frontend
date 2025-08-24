@@ -16,32 +16,43 @@
           </thead>
           <tbody>
             <!-- Fila ejemplo 1 -->
+            @for (employee of employeeService.employees(); track employee.id) {
             <tr>
-              <td class="ps-3">1001</td>
+              <td class="ps-3">{{ employee.id }}</td>
               <td>
                 <div class="d-flex align-items-center gap-2">
                   <img
-                    src="https://i.pravatar.cc/40?img=1"
+                    [src]="
+                      'https://randomuser.me/api/portraits/men/' +
+                      employee.id +
+                      '.jpg'
+                    "
                     class="rounded-circle"
                     width="34"
                     height="34"
                     alt=""
                   />
                   <div>
-                    <div class="fw-medium">Ana Gómez</div>
-                    <small class="text-secondary">Ingreso: 2022-05-10</small>
+                    <div class="fw-medium">
+                      {{ employee.firstName }} {{ employee.lastName }}
+                    </div>
+                    <small class="text-secondary">{{
+                      employee.hireDate
+                    }}</small>
                   </div>
                 </div>
               </td>
-              <td>ana.gomez@company.com</td>
+              <td>{{ employee.email }}</td>
               <td>
                 <span
                   class="badge text-bg-primary-subtle border border-primary-subtle"
-                  >Sistemas</span
+                  >{{ employee.department }}</span
                 >
               </td>
-              <td>Frontend Dev</td>
-              <td><span class="badge text-bg-success">Activo</span></td>
+              <td>{{ employee.position }}</td>
+              <td>
+                <span class="badge text-bg-success">{{ employee.status }}</span>
+              </td>
               <td class="pe-3 text-end">
                 <span
                   class="action-icon me-2 text-warning"
@@ -59,92 +70,7 @@
                 ></span>
               </td>
             </tr>
-            <!-- Fila ejemplo 2 -->
-            <tr>
-              <td class="ps-3">1002</td>
-              <td>
-                <div class="d-flex align-items-center gap-2">
-                  <img
-                    src="https://i.pravatar.cc/40?img=5"
-                    class="rounded-circle"
-                    width="34"
-                    height="34"
-                    alt=""
-                  />
-                  <div>
-                    <div class="fw-medium">Luis Pérez</div>
-                    <small class="text-secondary">Ingreso: 2023-01-20</small>
-                  </div>
-                </div>
-              </td>
-              <td>l.perez@company.com</td>
-              <td>
-                <span
-                  class="badge text-bg-info-subtle border border-info-subtle"
-                  >Ventas</span
-                >
-              </td>
-              <td>Account Exec</td>
-              <td>
-                <span class="badge text-bg-warning text-dark">Inactivo</span>
-              </td>
-              <td class="pe-3 text-end">
-                <span
-                  class="action-icon me-2 text-warning"
-                  data-bs-toggle="modal"
-                  data-bs-target="#employeeModal"
-                  ><i class="bi bi-pencil-square"></i
-                ></span>
-                <span
-                  class="action-icon text-danger"
-                  data-bs-toggle="modal"
-                  data-bs-target="#deleteModal"
-                  ><i class="bi bi-trash3"></i
-                ></span>
-              </td>
-            </tr>
-            <!-- Fila ejemplo 3 -->
-            <tr>
-              <td class="ps-3">1003</td>
-              <td>
-                <div class="d-flex align-items-center gap-2">
-                  <img
-                    src="https://i.pravatar.cc/40?img=12"
-                    class="rounded-circle"
-                    width="34"
-                    height="34"
-                    alt=""
-                  />
-                  <div>
-                    <div class="fw-medium">María López</div>
-                    <small class="text-secondary">Ingreso: 2024-11-03</small>
-                  </div>
-                </div>
-              </td>
-              <td>m.lopez@company.com</td>
-              <td>
-                <span
-                  class="badge text-bg-success-subtle border border-success-subtle"
-                  >RRHH</span
-                >
-              </td>
-              <td>Recruiter</td>
-              <td><span class="badge text-bg-success">Activo</span></td>
-              <td class="pe-3 text-end">
-                <span
-                  class="action-icon me-2 text-warning"
-                  data-bs-toggle="modal"
-                  data-bs-target="#employeeModal"
-                  ><i class="bi bi-pencil-square"></i
-                ></span>
-                <span
-                  class="action-icon text-danger"
-                  data-bs-toggle="modal"
-                  data-bs-target="#deleteModal"
-                  ><i class="bi bi-trash3"></i
-                ></span>
-              </td>
-            </tr>
+            }
           </tbody>
         </table>
       </div>
