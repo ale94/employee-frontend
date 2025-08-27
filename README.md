@@ -1,59 +1,26 @@
-# EmployeeAppAngular
+# 🌐 Employee Management Frontend 🌐
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
+## 📚 Description 📚
+Este repositorio contiene el **frontend** del sistema de gestión de empleados.  
+Está desarrollado con **Angular 20** y **Bootstrap**, consumiendo la API REST expuesta por el backend.  
 
-## Development server
+El backend correspondiente se encuentra aquí 👉 [Employee Management API](https://github.com/ale94/employee-api.git)
 
-To start a local development server, run:
+## 🚀 Features 🚀
+- Pantalla principal con listado de empleados  
+- Formulario para agregar un nuevo empleado  
+- Edición de empleados existentes  
+- Eliminación de empleados  
+- Visualización de imágenes de perfil dinámicas  
+- Diseño moderno en **modo dark** con **Bootstrap**  
 
-```bash
-ng serve
-```
+## 🤖 Technologies 🤖
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=ReactiveX&logoColor=fff)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📷 Screenshots 📷
+<a href="https://ibb.co/G30wnccv"><img src="https://i.ibb.co/5x6DGBBW/dashboard.png" alt="dashboard" border="0"></a>
+<a href="https://ibb.co/W1s2Mr4"><img src="https://i.ibb.co/cdxrZWS/newEmple.png" alt="newEmple" border="0"></a>
+---
